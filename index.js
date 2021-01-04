@@ -14,6 +14,13 @@ db.once('open',function () {
     console.log("Successfully connection.")
 });
 
+/* GET */
+
+app.get('/example',(req,res) => {
+
+})
+
+
 /*Server*/
 app.listen(port , () => {
   console.log("Hello World!")
