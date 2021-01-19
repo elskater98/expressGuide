@@ -1,7 +1,6 @@
-import mongoose from 'mongoose'
-const {Schema} = mongoose
+const mongoose = require('mongoose');
 
-const CpuSchema = new Schema({
+const CpuSchema = mongoose.Schema({
     cpu_name:{type:String,required:true,unique:true},
     cores:{type:Number,required:true},
     threads:{type:Number,required:true},
