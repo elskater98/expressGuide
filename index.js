@@ -9,6 +9,7 @@ const port = 3000
 /* Mongodb Connection*/
 const mongoose = require('mongoose')
 
+//mongoose.connect('mongodb://mongo:27017/database',{useNewUrlParser: true,useFindAndModify:false,useCreateIndex:true,useUnifiedTopology:true}) 
 mongoose.connect('mongodb://localhost:27017/database',{useNewUrlParser: true,useFindAndModify:false,useCreateIndex:true,useUnifiedTopology:true})
 
 // Check connection
@@ -83,8 +84,15 @@ app.patch('/cpu/:id',async(req,res)=>{
 
 
 /*Server*/
-app.listen(port , () => {
+app.listen(port,'0.0.0.0', () => {
   console.log("Hello World!")
 })
 
 module.exports = app
+
+// $ docker build -t express-server .
+// $ docker run -p 3000:3000 express-server
+// $ docker run -t -i express-server bash
+
+// docker-compose build 
+// docker-compose up 

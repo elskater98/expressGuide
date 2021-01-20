@@ -1,0 +1,21 @@
+version: "3"
+services:
+  server:
+    build: .
+    depends_on: 
+      - mongo
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - .:/usr/expressGuide
+      - /usr/expressGuide/node_modules
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    expose: 
+      - "27017"
+    volumes: 
+      - mongodata:/data/db
+volumes: 
+  mongodata:

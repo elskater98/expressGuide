@@ -1,0 +1,11 @@
+Listado de rutas de carpetas
+El n�mero de serie del volumen es 60B0-673E
+C:.
+|   index.js
+|   package-lock.json
+|   package.json
+|   
+|           
+\---schemas
+        cpu.js
+        
