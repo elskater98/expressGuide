@@ -89,10 +89,3 @@ app.listen(port,'0.0.0.0', () => {
 })
 
 module.exports = app
-
-// $ docker build -t express-server .
-// $ docker run -p 3000:3000 express-server
-// $ docker run -t -i express-server bash
-
-// docker-compose build 
-// docker-compose up 
