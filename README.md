@@ -4,6 +4,10 @@
 
 ```sh
 $ npm install
+```
+
+# Run Server
+```sh
 $ node app
 ```
 
